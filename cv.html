@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV d'Ilyas Ennahli — Formation, projets et compétences en informatique, statistique et finance quantitative.">
+  <title>CV — ILYAS ENNAHLI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Theme -->
+  <link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body>
+
+  <!-- ── NAVBAR ──────────────────────────────────────── -->
+  <nav class="navbar navbar-expand-lg navbar-custom" aria-label="Navigation principale">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">IE</a>
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Menu de navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link active" href="cv.html" aria-current="page">CV</a></li>
+          <li class="nav-item"><a class="nav-link" href="file.html">Liens</a></li>
+          <li class="nav-item"><a class="nav-link" href="loisirs.html">Loisirs</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── PAGE HEADER ─────────────────────────────────── -->
+  <header class="page-header">
+    <div class="container">
+      <p class="page-header-eyebrow">Parcours</p>
+      <h1>Curriculum Vitae</h1>
+      <p>Formation, projets et compétences</p>
+    </div>
+  </header>
+
+  <!-- ── LANG TOGGLE ─────────────────────────────────── -->
+  <div class="section-sm" style="border-bottom: 1px solid var(--line);">
+    <div class="container">
+      <div class="d-flex align-items-center gap-3">
+        <span style="font-size: var(--size-xs); text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted);">
+          <i class="fas fa-globe me-2" aria-hidden="true"></i>Langue
+        </span>
+        <div class="lang-switch" role="group" aria-label="Sélection de langue">
+          <button class="toggle-btn active" data-lang="fr" onclick="switchLang('fr')">FR</button>
+          <button class="toggle-btn" data-lang="en" onclick="switchLang('en')">EN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── MAIN CONTENT ─────────────────────────────────── -->
+  <main class="section">
+    <div class="container">
+
+      <!-- ════ VERSION FRANÇAISE ════ -->
+      <div class="lang-content active" data-lang="fr">
+
+        <div class="row g-5">
+          <!-- Left column: Education + Projects -->
+          <div class="col-lg-7">
+
+            <!-- Parcours Scolaire -->
+            <section class="mb-5 animate-on-scroll" aria-labelledby="edu-fr-title">
+              <div class="section-header">
+                <p class="section-label">Formation</p>
+                <h2 class="section-title" id="edu-fr-title">Parcours Scolaire</h2>
+              </div>
+              <div class="timeline">
+                <div class="timeline-entry">
+                  <p class="timeline-date">2025 — 2028</p>
+                  <h3 class="timeline-title">Cycle Ingénieur ISIA</h3>
+                  <p class="timeline-place">
+                    <i class="fas fa-location-dot" aria-hidden="true"></i>Polytech Lille, France
+                  </p>
+                  <ul>
+                    <li>Programmation : C, Python, PHP, HTML, JavaScript, CSS, R</li>
+                    <li>Bases de données : SQL, PostgreSQL</li>
+                    <li>Analyse de données, probabilités, statistiques et modélisation</li>
+                    <li>Outils : Git, Linux, Kafka, Docker, Airflow, Algorithmique avancée</li>
+                  </ul>
+                </div>
+                <div class="timeline-entry">
+                  <p class="timeline-date">2023 — 2025</p>
+                  <h3 class="timeline-title">CPGE &mdash; Filière MP</h3>
+                  <p class="timeline-place">
+                    <i class="fas fa-location-dot" aria-hidden="true"></i>Lycée Ibn Ghazi, Fès, Maroc
+                  </p>
+                  <ul>
+                    <li>Formation intensive en Mathématiques et Physique</li>
+                    <li>Algèbre, Analyse, Probabilités, Physique fondamentale</li>
+                    <li>Développement de la rigueur scientifique et de l'esprit analytique</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <hr class="dotted-divider">
+
+            <!-- Projets -->
+            <section class="mb-5 animate-on-scroll" aria-labelledby="proj-fr-title">
+              <div class="section-header">
+                <p class="section-label">Travaux</p>
+                <h2 class="section-title" id="proj-fr-title">Projets Réalisés</h2>
+              </div>
+              <div class="project-index">
+
+                <article class="project-row">
+                  <span class="project-row__number" aria-hidden="true">01</span>
+                  <div class="project-row__body">
+                    <h3 class="project-row__title">Gestion de Compagnie Aérienne</h3>
+                    <p class="project-row__meta">PostgreSQL · UML · SQL</p>
+                    <p class="project-row__summary">
+                      Modélisation UML et conception d'une base de données relationnelle avec PostgreSQL.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="project-row">
+                  <span class="project-row__number" aria-hidden="true">02</span>
+                  <div class="project-row__body">
+                    <h3 class="project-row__title">Analyse Prédictive de Marché</h3>
+                    <p class="project-row__meta">JavaScript · Finance · Algorithmes</p>
+                    <p class="project-row__summary">
+                      Algorithmes de prédiction financière en JavaScript/HTML pour l'analyse de tendances.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="project-row">
+                  <span class="project-row__number" aria-hidden="true">03</span>
+                  <div class="project-row__body">
+                    <h3 class="project-row__title">Pipeline ETL</h3>
+                    <p class="project-row__meta">Python · Pandas · ETL</p>
+                    <p class="project-row__summary">
+                      Extraction, transformation et chargement de données — mini-projet Data Engineering.
+                    </p>
+                  </div>
+                </article>
+
+              </div>
+            </section>
+
+          </div>
+
+          <!-- Right column: Skills + Languages -->
+          <div class="col-lg-5">
+
+            <section class="mb-5 animate-on-scroll" aria-labelledby="skills-fr-title">
+              <div class="section-header">
+                <p class="section-label">Stack</p>
+                <h2 class="section-title" id="skills-fr-title">Compétences</h2>
+              </div>
+
+              <div class="skills-group">
+                <p class="skills-group-title">Techniques</p>
+                <div class="skills-chips">
+                  <span class="skill-chip"><i class="fab fa-python" aria-hidden="true"></i> Python</span>
+                  <span class="skill-chip"><i class="fas fa-code" aria-hidden="true"></i> C</span>
+                  <span class="skill-chip"><i class="fab fa-php" aria-hidden="true"></i> PHP</span>
+                  <span class="skill-chip"><i class="fas fa-database" aria-hidden="true"></i> SQL</span>
+                  <span class="skill-chip"><i class="fab fa-r-project" aria-hidden="true"></i> R</span>
+                  <span class="skill-chip"><i class="fab fa-js" aria-hidden="true"></i> JS</span>
+                  <span class="skill-chip"><i class="fab fa-css3-alt" aria-hidden="true"></i> CSS</span>
+                </div>
+              </div>
+
+              <div class="skills-group">
+                <p class="skills-group-title">Outils</p>
+                <div class="skills-chips">
+                  <span class="skill-chip"><i class="fas fa-database" aria-hidden="true"></i> PostgreSQL</span>
+                  <span class="skill-chip"><i class="fab fa-docker" aria-hidden="true"></i> Docker</span>
+                  <span class="skill-chip"><i class="fas fa-network-wired" aria-hidden="true"></i> Kafka</span>
+                  <span class="skill-chip"><i class="fab fa-git-alt" aria-hidden="true"></i> Git</span>
+                  <span class="skill-chip"><i class="fab fa-linux" aria-hidden="true"></i> Linux</span>
+                </div>
+              </div>
+
+              <div class="skills-group">
+                <p class="skills-group-title">Mathématiques &amp; Data</p>
+                <div class="skills-chips">
+                  <span class="skill-chip"><i class="fas fa-chart-pie" aria-hidden="true"></i> Statistiques</span>
+                  <span class="skill-chip"><i class="fas fa-dice" aria-hidden="true"></i> Probabilités</span>
+                  <span class="skill-chip"><i class="fas fa-sitemap" aria-hidden="true"></i> Modélisation</span>
+                </div>
+              </div>
+            </section>
+
+            <section class="animate-on-scroll" aria-labelledby="lang-fr-title">
+              <div class="info-panel">
+                <span class="info-panel-label" id="lang-fr-title">Langues</span>
+                <div class="lang-row">
+                  <span class="lang-name">Arabe</span>
+                  <span class="tag tag-accent">Maternel</span>
+                </div>
+                <div class="lang-row">
+                  <span class="lang-name">Français</span>
+                  <span class="tag">B2</span>
+                </div>
+                <div class="lang-row">
+                  <span class="lang-name">Anglais</span>
+                  <span class="tag">C1</span>
+                </div>
+                <div class="lang-row">
+                  <span class="lang-name">Allemand</span>
+                  <span class="tag">A1</span>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+
+      </div><!-- /lang-content fr -->
+
+      <!-- ════ VERSION ANGLAISE ════ -->
+      <div class="lang-content" data-lang="en">
+
+        <div class="row g-5">
+          <!-- Left column -->
+          <div class="col-lg-7">
+
+            <section class="mb-5 animate-on-scroll" aria-labelledby="edu-en-title">
+              <div class="section-header">
+                <p class="section-label">Education</p>
+                <h2 class="section-title" id="edu-en-title">Academic Background</h2>
+              </div>
+              <div class="timeline">
+                <div class="timeline-entry">
+                  <p class="timeline-date">2025 — 2028</p>
+                  <h3 class="timeline-title">Engineering Degree — CS, Statistics &amp; AI</h3>
+                  <p class="timeline-place">
+                    <i class="fas fa-location-dot" aria-hidden="true"></i>Polytech Lille, France
+                  </p>
+                  <ul>
+                    <li>Programming: C, Python, PHP, HTML, JavaScript, CSS, R</li>
+                    <li>Databases: SQL, PostgreSQL</li>
+                    <li>Data Analysis, Probability, Statistics and Modeling</li>
+                    <li>Tools: Git, Linux, Kafka, Docker, Airflow, Advanced Algorithms</li>
+                  </ul>
+                </div>
+                <div class="timeline-entry">
+                  <p class="timeline-date">2023 — 2025</p>
+                  <h3 class="timeline-title">Intensive Preparatory Classes (CPGE) &mdash; MP Track</h3>
+                  <p class="timeline-place">
+                    <i class="fas fa-location-dot" aria-hidden="true"></i>Ibn Ghazi High School, Fes, Morocco
+                  </p>
+                  <ul>
+                    <li>Highly competitive curriculum in Mathematics &amp; Physics</li>
+                    <li>Algebra, Calculus, Probability Theory, Fundamental Physics</li>
+                    <li>Development of rigorous scientific reasoning and analytical skills</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <hr class="dotted-divider">
+
+            <!-- Projects -->
+            <section class="mb-5 animate-on-scroll" aria-labelledby="proj-en-title">
+              <div class="section-header">
+                <p class="section-label">Work</p>
+                <h2 class="section-title" id="proj-en-title">Projects</h2>
+              </div>
+              <div class="project-index">
+
+                <article class="project-row">
+                  <span class="project-row__number" aria-hidden="true">01</span>
+                  <div class="project-row__body">
+                    <h3 class="project-row__title">Airline Management System</h3>
+                    <p class="project-row__meta">PostgreSQL · UML · SQL</p>
+                    <p class="project-row__summary">
+                      UML modeling and relational database design with PostgreSQL for flight and reservation management.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="project-row">
+                  <span class="project-row__number" aria-hidden="true">02</span>
+                  <div class="project-row__body">
+                    <h3 class="project-row__title">Predictive Market Analysis</h3>
+                    <p class="project-row__meta">JavaScript · Finance · Algorithms</p>
+                    <p class="project-row__summary">
+                      Financial prediction algorithms built with JavaScript/HTML for market trend analysis.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="project-row">
+                  <span class="project-row__number" aria-hidden="true">03</span>
+                  <div class="project-row__body">
+                    <h3 class="project-row__title">ETL Pipeline</h3>
+                    <p class="project-row__meta">Python · Pandas · ETL</p>
+                    <p class="project-row__summary">
+                      End-to-end data extraction, transformation, and loading pipeline for a Data Engineering project.
+                    </p>
+                  </div>
+                </article>
+
+              </div>
+            </section>
+
+          </div>
+
+          <!-- Right column -->
+          <div class="col-lg-5">
+
+            <section class="mb-5 animate-on-scroll" aria-labelledby="skills-en-title">
+              <div class="section-header">
+                <p class="section-label">Stack</p>
+                <h2 class="section-title" id="skills-en-title">Skills</h2>
+              </div>
+
+              <div class="skills-group">
+                <p class="skills-group-title">Technical</p>
+                <div class="skills-chips">
+                  <span class="skill-chip"><i class="fab fa-python" aria-hidden="true"></i> Python</span>
+                  <span class="skill-chip"><i class="fas fa-code" aria-hidden="true"></i> C</span>
+                  <span class="skill-chip"><i class="fab fa-php" aria-hidden="true"></i> PHP</span>
+                  <span class="skill-chip"><i class="fas fa-database" aria-hidden="true"></i> SQL</span>
+                  <span class="skill-chip"><i class="fab fa-r-project" aria-hidden="true"></i> R</span>
+                  <span class="skill-chip"><i class="fab fa-js" aria-hidden="true"></i> JS</span>
+                  <span class="skill-chip"><i class="fab fa-css3-alt" aria-hidden="true"></i> CSS</span>
+                </div>
+              </div>
+
+              <div class="skills-group">
+                <p class="skills-group-title">Tools</p>
+                <div class="skills-chips">
+                  <span class="skill-chip"><i class="fas fa-database" aria-hidden="true"></i> PostgreSQL</span>
+                  <span class="skill-chip"><i class="fab fa-docker" aria-hidden="true"></i> Docker</span>
+                  <span class="skill-chip"><i class="fas fa-network-wired" aria-hidden="true"></i> Kafka</span>
+                  <span class="skill-chip"><i class="fab fa-git-alt" aria-hidden="true"></i> Git</span>
+                  <span class="skill-chip"><i class="fab fa-linux" aria-hidden="true"></i> Linux</span>
+                </div>
+              </div>
+
+              <div class="skills-group">
+                <p class="skills-group-title">Mathematics &amp; Data</p>
+                <div class="skills-chips">
+                  <span class="skill-chip"><i class="fas fa-chart-pie" aria-hidden="true"></i> Statistics</span>
+                  <span class="skill-chip"><i class="fas fa-dice" aria-hidden="true"></i> Probability</span>
+                  <span class="skill-chip"><i class="fas fa-sitemap" aria-hidden="true"></i> Modeling</span>
+                </div>
+              </div>
+            </section>
+
+            <section class="animate-on-scroll" aria-labelledby="lang-en-title">
+              <div class="info-panel">
+                <span class="info-panel-label" id="lang-en-title">Languages</span>
+                <div class="lang-row">
+                  <span class="lang-name">Arabic</span>
+                  <span class="tag tag-accent">Native</span>
+                </div>
+                <div class="lang-row">
+                  <span class="lang-name">French</span>
+                  <span class="tag">B2</span>
+                </div>
+                <div class="lang-row">
+                  <span class="lang-name">English</span>
+                  <span class="tag">C1</span>
+                </div>
+                <div class="lang-row">
+                  <span class="lang-name">German</span>
+                  <span class="tag">A1</span>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+
+      </div><!-- /lang-content en -->
+
+      <!-- External links -->
+      <div class="mt-5 pt-4 d-flex gap-3 animate-on-scroll" style="border-top: 1px solid var(--line);">
+        <a href="https://github.com/ILYAS-ENN" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+          <i class="fab fa-github" aria-hidden="true"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/ilyas-ennahli/" target="_blank" rel="noopener noreferrer" class="btn btn-accent">
+          <i class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn
+        </a>
+      </div>
+
+    </div><!-- /container -->
+  </main>
+
+  <!-- ── FOOTER ───────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="footer-logo">ILYAS ENNAHLI</a>
+          <p class="footer-tagline">
+            Futur Ingénieur &mdash; Informatique, Statistique &amp; Intelligence Artificielle.
+            Polytech Lille.
+          </p>
+        </div>
+        <div>
+          <p class="footer-col-title">Navigation</p>
+          <ul class="footer-nav">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="file.html">Liens</a></li>
+            <li><a href="loisirs.html">Loisirs</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Retrouvez-moi</p>
+          <div class="footer-social">
+            <a href="https://github.com/ILYAS-ENN" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ilyas-ennahli/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:ennahliilyas@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Ilyas Ennahli</span>
+        <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+          <i class="fas fa-arrow-up me-1" aria-hidden="true"></i>Haut de page
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.toggle-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+      document.querySelectorAll('.lang-content').forEach(el => {
+        el.classList.toggle('active', el.dataset.lang === lang);
+      });
+      // Re-trigger scroll animations for newly visible content
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.lang-content.active .animate-on-scroll').forEach(el => {
+        el.classList.remove('visible');
+        observer.observe(el);
+      });
+    }
+  </script>
+</body>
+</html>

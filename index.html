@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio d'Ilyas Ennahli — Ingénieur ISIA, Polytech Lille. Informatique, Statistique &amp; Intelligence Artificielle.">
+  <title>ILYAS ENNAHLI — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Theme -->
+  <link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body>
+
+  <!-- ── NAVBAR ──────────────────────────────────────── -->
+  <nav class="navbar navbar-expand-lg navbar-custom" aria-label="Navigation principale">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">IE</a>
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Menu de navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+          <li class="nav-item"><a class="nav-link" href="file.html">Liens</a></li>
+          <li class="nav-item"><a class="nav-link" href="loisirs.html">Loisirs</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO ────────────────────────────────────────── -->
+  <section class="hero" id="hero" aria-labelledby="hero-name">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-xl-9">
+
+          <p class="hero-eyebrow">Polytech Lille &mdash; ISIA</p>
+
+          <h1 class="hero-name" id="hero-name">
+            ILYAS<br><span class="accent">ENNAHLI</span>
+          </h1>
+
+          <p class="hero-role">
+            Futur Ingénieur en Informatique, Statistique &amp; Intelligence Artificielle.
+            Curieux de finance quantitative et d'ingénierie des données.
+          </p>
+
+          <div class="hero-status" aria-label="Informations de statut">
+            <div class="hero-status-item">
+              <span class="hero-status-dot" aria-hidden="true"></span>
+              Lille, France
+            </div>
+            <div class="hero-status-item">
+              <span class="hero-status-dot" aria-hidden="true"></span>
+              Cycle Ingénieur &mdash; 1<sup>ère</sup> année
+            </div>
+            <div class="hero-status-item">
+              <span class="hero-status-dot" aria-hidden="true"></span>
+              Ouvert aux opportunités
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="cv.html" class="btn btn-accent">
+              <i class="fas fa-file-lines" aria-hidden="true"></i> Mon CV
+            </a>
+            <a href="#projets" class="btn btn-ghost">
+              <i class="fas fa-diagram-project" aria-hidden="true"></i> Mes Projets
+            </a>
+          </div>
+
+          <!-- Mono metadata line — handcrafted detail -->
+          <div class="hero-meta" aria-label="Statistiques">
+            <div class="hero-meta-item">
+              <span class="meta-value">3+</span>
+              projets&nbsp;data
+            </div>
+            <div class="hero-meta-item">
+              <span class="meta-value">CPGE&nbsp;MP</span>
+              filière
+            </div>
+            <div class="hero-meta-item">
+              <span class="meta-value">ISIA</span>
+              spécialité
+            </div>
+            <div class="hero-meta-item">
+              <span class="meta-value">C1</span>
+              anglais
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── À PROPOS ─────────────────────────────────────── -->
+  <section class="section" id="apropos" aria-labelledby="apropos-title">
+    <div class="container">
+
+      <div class="section-header animate-on-scroll">
+        <p class="section-label">À propos</p>
+        <h2 class="section-title" id="apropos-title">
+          Un profil hybride entre<br>maths, code &amp; données
+        </h2>
+      </div>
+
+      <div class="row g-5 align-items-start">
+
+        <!-- Bio with accent left-border -->
+        <div class="col-lg-7 animate-on-scroll">
+          <div class="about-text">
+            <p>
+              Étudiant en 1<sup>ère</sup> année du <strong>cycle ingénieur à Polytech Lille</strong>,
+              spécialisé en <strong>Informatique, Statistique et Intelligence Artificielle (ISIA)</strong>.
+              Issu d'une formation intensive en <strong>CPGE MP</strong> au Lycée Ibn Ghazi (Fès),
+              je possède un socle solide en mathématiques pures et appliquées.
+            </p>
+            <p>
+              Mon objectif : devenir <strong>Quant Engineer</strong> en combinant ma double compétence
+              en informatique et en modélisation statistique pour résoudre des problèmes complexes
+              en finance quantitative et ingénierie des données.
+            </p>
+          </div>
+          <div class="mt-4 d-flex flex-wrap gap-2">
+            <span class="tag tag-accent"><i class="fas fa-graduation-cap me-1" aria-hidden="true"></i>CPGE&nbsp;MP</span>
+            <span class="tag tag-accent"><i class="fas fa-university me-1" aria-hidden="true"></i>Polytech&nbsp;Lille</span>
+            <span class="tag"><i class="fas fa-chart-line me-1" aria-hidden="true"></i>Quant&nbsp;Finance</span>
+            <span class="tag"><i class="fas fa-brain me-1" aria-hidden="true"></i>IA &amp; Statistique</span>
+          </div>
+        </div>
+
+        <!-- Formation quick-info panel -->
+        <div class="col-lg-5 animate-on-scroll">
+          <div class="info-panel">
+            <span class="info-panel-label">Formation</span>
+
+            <div class="info-panel-entry">
+              <p class="info-panel-date">2025 — 2028</p>
+              <p class="info-panel-title">Cycle Ingénieur ISIA</p>
+              <p class="info-panel-sub">Polytech Lille, France</p>
+            </div>
+
+            <div class="info-panel-entry">
+              <p class="info-panel-date">2023 — 2025</p>
+              <p class="info-panel-title">CPGE &mdash; Filière MP</p>
+              <p class="info-panel-sub">Lycée Ibn Ghazi, Fès, Maroc</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJETS ──────────────────────────────────────── -->
+  <section class="section section-panel" id="projets" aria-labelledby="projets-title">
+    <div class="container">
+
+      <div class="section-header animate-on-scroll">
+        <p class="section-label">Travaux</p>
+        <h2 class="section-title" id="projets-title">Projets &amp; Réalisations</h2>
+      </div>
+
+      <div class="project-index animate-on-scroll" role="list">
+
+        <!-- 01 -->
+        <article class="project-row" role="listitem">
+          <span class="project-row__number" aria-hidden="true">01</span>
+          <div class="project-row__body">
+            <h3 class="project-row__title">Gestion de Compagnie Aérienne</h3>
+            <p class="project-row__meta">Base de données &middot; 2025</p>
+            <p class="project-row__summary">
+              Conception d'une base de données relationnelle complète avec modélisation UML
+              pour la gestion des vols, réservations et passagers.
+            </p>
+            <div class="project-row__tags">
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">UML</span>
+              <span class="tag">SQL</span>
+            </div>
+          </div>
+          <div class="project-row__cta">
+            <a href="https://github.com/ILYAS-ENN" target="_blank" rel="noopener noreferrer" class="view-case">
+              Voir <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- 02 -->
+        <article class="project-row" role="listitem">
+          <span class="project-row__number" aria-hidden="true">02</span>
+          <div class="project-row__body">
+            <h3 class="project-row__title">Analyse Prédictive de Marché</h3>
+            <p class="project-row__meta">Finance quantitative &middot; 2025</p>
+            <p class="project-row__summary">
+              Développement d'algorithmes de prédiction financière pour l'analyse de
+              tendances de marché et la prise de décision quantitative.
+            </p>
+            <div class="project-row__tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Algorithmes</span>
+              <span class="tag">Finance</span>
+            </div>
+          </div>
+          <div class="project-row__cta">
+            <a href="https://github.com/ILYAS-ENN" target="_blank" rel="noopener noreferrer" class="view-case">
+              Voir <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- 03 -->
+        <article class="project-row" role="listitem">
+          <span class="project-row__number" aria-hidden="true">03</span>
+          <div class="project-row__body">
+            <h3 class="project-row__title">Pipeline ETL &mdash; Data Engineering</h3>
+            <p class="project-row__meta">Data Engineering &middot; 2025</p>
+            <p class="project-row__summary">
+              Construction d'un pipeline ETL complet pour l'extraction, la transformation
+              et le chargement de données avec automatisation du processus.
+            </p>
+            <div class="project-row__tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">ETL</span>
+            </div>
+          </div>
+          <div class="project-row__cta">
+            <a href="https://github.com/ILYAS-ENN" target="_blank" rel="noopener noreferrer" class="view-case">
+              Voir <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="mt-5 animate-on-scroll">
+        <a href="https://github.com/ILYAS-ENN" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+          <i class="fab fa-github" aria-hidden="true"></i> Tous les projets sur GitHub
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── COMPÉTENCES ──────────────────────────────────── -->
+  <section class="section" id="competences" aria-labelledby="competences-title">
+    <div class="container">
+
+      <div class="section-header animate-on-scroll">
+        <p class="section-label">Stack</p>
+        <h2 class="section-title" id="competences-title">Compétences Techniques</h2>
+      </div>
+
+      <div class="row g-5">
+
+        <div class="col-lg-8 animate-on-scroll">
+
+          <div class="skills-group">
+            <p class="skills-group-title">Langages &amp; Frameworks</p>
+            <div class="skills-chips">
+              <span class="skill-chip"><i class="fab fa-python" aria-hidden="true"></i> Python</span>
+              <span class="skill-chip"><i class="fas fa-code" aria-hidden="true"></i> C</span>
+              <span class="skill-chip"><i class="fab fa-r-project" aria-hidden="true"></i> R</span>
+              <span class="skill-chip"><i class="fab fa-js" aria-hidden="true"></i> JavaScript</span>
+              <span class="skill-chip"><i class="fab fa-php" aria-hidden="true"></i> PHP</span>
+              <span class="skill-chip"><i class="fab fa-css3-alt" aria-hidden="true"></i> CSS</span>
+              <span class="skill-chip"><i class="fas fa-database" aria-hidden="true"></i> SQL</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <p class="skills-group-title">Outils &amp; Technologies</p>
+            <div class="skills-chips">
+              <span class="skill-chip"><i class="fas fa-database" aria-hidden="true"></i> PostgreSQL</span>
+              <span class="skill-chip"><i class="fab fa-docker" aria-hidden="true"></i> Docker</span>
+              <span class="skill-chip"><i class="fas fa-network-wired" aria-hidden="true"></i> Kafka</span>
+              <span class="skill-chip"><i class="fab fa-git-alt" aria-hidden="true"></i> Git</span>
+              <span class="skill-chip"><i class="fab fa-linux" aria-hidden="true"></i> Linux</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <p class="skills-group-title">Data &amp; Mathématiques</p>
+            <div class="skills-chips">
+              <span class="skill-chip"><i class="fas fa-chart-pie" aria-hidden="true"></i> Statistiques</span>
+              <span class="skill-chip"><i class="fas fa-dice" aria-hidden="true"></i> Probabilités</span>
+              <span class="skill-chip"><i class="fas fa-brain" aria-hidden="true"></i> Machine Learning</span>
+              <span class="skill-chip"><i class="fas fa-sitemap" aria-hidden="true"></i> Modélisation</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Languages aside panel -->
+        <div class="col-lg-4 animate-on-scroll">
+          <div class="info-panel">
+            <span class="info-panel-label">Langues</span>
+            <div class="lang-row">
+              <span class="lang-name">Arabe</span>
+              <span class="tag tag-accent">Maternel</span>
+            </div>
+            <div class="lang-row">
+              <span class="lang-name">Français</span>
+              <span class="tag">B2</span>
+            </div>
+            <div class="lang-row">
+              <span class="lang-name">Anglais</span>
+              <span class="tag">C1</span>
+            </div>
+            <div class="lang-row">
+              <span class="lang-name">Allemand</span>
+              <span class="tag">A1</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ──────────────────────────────────────── -->
+  <section class="section section-panel" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+
+      <div class="section-header animate-on-scroll">
+        <p class="section-label">Contact</p>
+        <h2 class="section-title" id="contact-title">Travaillons ensemble</h2>
+      </div>
+
+      <div class="row animate-on-scroll">
+        <div class="col-lg-8">
+          <div class="contact-grid">
+
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true"><i class="fas fa-envelope"></i></div>
+              <div>
+                <p class="contact-item-label">Email</p>
+                <a href="mailto:ennahliilyas@gmail.com" class="contact-item-value link-animated">
+                  ennahliilyas@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true"><i class="fas fa-phone"></i></div>
+              <div>
+                <p class="contact-item-label">Téléphone</p>
+                <p class="contact-item-value mb-0">07&nbsp;51&nbsp;49&nbsp;26&nbsp;20</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <p class="contact-item-label">LinkedIn</p>
+                <a href="https://www.linkedin.com/in/ilyas-ennahli/" target="_blank" rel="noopener noreferrer"
+                   class="contact-item-value link-animated">
+                  ilyas-ennahli
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true"><i class="fab fa-github"></i></div>
+              <div>
+                <p class="contact-item-label">GitHub</p>
+                <a href="https://github.com/ILYAS-ENN" target="_blank" rel="noopener noreferrer"
+                   class="contact-item-value link-animated">
+                  ILYAS-ENN
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── FOOTER ───────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="footer-logo">ILYAS ENNAHLI</a>
+          <p class="footer-tagline">
+            Futur Ingénieur &mdash; Informatique, Statistique &amp; Intelligence Artificielle.
+            Polytech Lille.
+          </p>
+        </div>
+        <div>
+          <p class="footer-col-title">Navigation</p>
+          <ul class="footer-nav">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="file.html">Liens</a></li>
+            <li><a href="loisirs.html">Loisirs</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Retrouvez-moi</p>
+          <div class="footer-social">
+            <a href="https://github.com/ILYAS-ENN" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ilyas-ennahli/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:ennahliilyas@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Ilyas Ennahli</span>
+        <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+          <i class="fas fa-arrow-up me-1" aria-hidden="true"></i>Haut de page
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
