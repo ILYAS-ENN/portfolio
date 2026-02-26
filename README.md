@@ -1,201 +1,146 @@
-# ILYAS ENNAHLI — Portfolio
+# Ilyas Ennahli — Portfolio
 
-Site portfolio personnel. Design **Dark Editorial + Blueprint Accent**, construit avec Bootstrap 5 et CSS custom (aucun framework JS, aucun build tool).
+Étudiant ingénieur en Informatique, Statistique et Intelligence Artificielle (ISIA) à Polytech Lille. Issu de deux années de CPGE MP, j'apporte une formation mathématique solide à mes projets en Data Science, Data Engineering et finance quantitative. Ce repository contient le code source de mon portfolio personnel, conçu et développé entièrement sans framework ni outil de build.
 
-**URL live :** `https://<TON_USERNAME>.github.io/<TON_REPO>/`
+---
+
+## Objectif professionnel
+
+Devenir **Quant Engineer** en combinant modélisation statistique, algorithmique et ingénierie logicielle pour résoudre des problèmes à haute valeur analytique — pricing, optimisation de portefeuille, pipelines de données financières.
 
 ---
 
 ## Stack technique
 
-| Élément | Technologie |
-|---|---|
-| Structure | HTML5 sémantique |
-| Style | Bootstrap 5.3 (CDN) + `assets/css/theme.css` |
-| Icônes | FontAwesome 6 (CDN) |
-| Typo | Fraunces + Inter (Google Fonts, chargé via CSS) |
-| Script | `main.js` vanilla — navbar, scroll animations, back-to-top |
-| Build | **Aucun** — site 100 % statique |
-| Déploiement | GitHub Actions → GitHub Pages |
+| Couche | Technologie | Remarque |
+|---|---|---|
+| Structure | HTML5 sémantique | Accessibilité, headings logiques, ARIA |
+| Style | Bootstrap 5.3 (CDN) | Grille et utilitaires uniquement |
+| Design system | `assets/css/theme.css` | Variables CSS, composants custom, zéro dépendance |
+| Typographie | Fraunces + Inter | Google Fonts via `@import` dans le CSS |
+| Icônes | FontAwesome 6 (CDN) | — |
+| Script | JavaScript vanilla | Navbar scroll, IntersectionObserver, back-to-top |
+| Build | Aucun | Fichiers servis directement |
+| CI/CD | GitHub Actions | Déploiement automatique sur push `main` |
+| Hébergement | GitHub Pages | Branche `main`, source : GitHub Actions |
 
 ---
 
-## Lancer en local
+## Philosophie du projet
 
-```bash
-# Option 1 — ouvrir directement (pas de serveur)
-# Double-cliquer sur index.html dans l'explorateur
+Ce portfolio est intentionnellement construit sans framework JS, sans bundler et sans générateur de site statique.
 
-# Option 2 — serveur local Python (recommandé pour éviter les CORS sur fonts)
-cd chemin/vers/cv
-python -m http.server 3000
-# Ouvrir http://localhost:3000
+Ce choix répond à trois exigences :
 
-# Option 3 — serveur local Node (si installé)
-npx serve .
-# Ouvrir http://localhost:3000
-```
+**Contrôle total.** Chaque ligne de CSS est écrite à la main. Le comportement du site est prévisible, auditable et modifiable sans comprendre un écosystème tiers.
 
-Aucune installation de dépendances, aucun `npm install` nécessaire.
+**Performance par défaut.** Pas de JavaScript inutile, pas d'arbre de composants, pas de runtime. Le Time to First Byte est minimal ; le site fonctionne sans JS activé pour 95 % de son contenu.
 
----
-
-## Déployer sur GitHub Pages
-
-### Étape 1 — Créer le repo sur GitHub
-
-1. Aller sur [github.com/new](https://github.com/new)
-2. Nom du repo : `portfolio` (ou ce que vous voulez)
-3. Visibilité : **Public** (requis pour Pages gratuit)
-4. **Ne pas** initialiser avec README (on va pousser le nôtre)
-5. Cliquer **Create repository**
-
-### Étape 2 — Pousser le code
-
-```bash
-cd c:\Users\ennah\Downloads\cv\cv
-
-# Initialiser git (si ce n'est pas déjà fait)
-git init
-git branch -M main
-
-# Ajouter les fichiers (on exclut style.css si on veut être propre)
-git add index.html cv.html file.html loisirs.html main.js
-git add assets/
-git add .github/
-git add .nojekyll
-git add README.md
-
-# Premier commit
-git commit -m "feat: Dark Editorial portfolio — initial deploy"
-
-# Lier le repo distant (remplacer les placeholders)
-git remote add origin https://github.com/ILYAS-ENN/portfolio.git
-
-# Pousser
-git push -u origin main
-```
-
-### Étape 3 — Activer GitHub Pages (une seule fois)
-
-1. Aller dans le repo → **Settings** → **Pages** (menu de gauche)
-2. Sous **"Build and deployment"**, changer la **Source** de `Deploy from a branch` à **`GitHub Actions`**
-3. Cliquer **Save**
-
-> ⚠️ Ce réglage est indispensable. Sans lui, le workflow s'exécute mais ne déploie rien.
-
-### Étape 4 — Vérifier le déploiement
-
-1. Aller dans l'onglet **Actions** du repo
-2. Voir le workflow `Deploy to GitHub Pages` passer au vert ✅
-3. Cliquer sur le job pour voir l'URL finale affichée en bas
-
-Le site sera disponible sur :
-```
-https://ILYAS-ENN.github.io/portfolio/
-```
-
-### Déploiements suivants — automatique
-
-Chaque `git push` sur `main` déclenche automatiquement le workflow.
-
-```bash
-# Modifier un fichier, puis :
-git add .
-git commit -m "update: ..."
-git push
-# → GitHub Actions redéploie en ~30 secondes
-```
+**Pertinence de la complexité.** Un portfolio de quatre pages statiques ne justifie pas React, Vite ni Next.js. Choisir le bon outil pour le bon problème est une compétence d'ingénieur.
 
 ---
 
 ## Structure des fichiers
 
 ```
-cv/
-├── index.html              # Page d'accueil (Hero, À propos, Projets, Compétences, Contact)
-├── cv.html                 # CV interactif FR/EN (Formation, Projets, Compétences, Langues)
-├── file.html               # Liens utiles (Polytech, GitHub, LinkedIn, Contact)
-├── loisirs.html            # Loisirs & passions (Développement, Gaming, Sports, Nature)
-├── main.js                 # Script partagé (navbar, animations, back-to-top)
+portfolio/
+├── index.html                   # Accueil — Hero, À propos, Projets, Compétences, Contact
+├── cv.html                      # CV interactif — bascule FR / EN
+├── file.html                    # Liens — Polytech, GitHub, LinkedIn, contact
+├── loisirs.html                 # Loisirs & passions
+├── main.js                      # Script partagé (navbar, scroll animations, back-to-top)
+│
 ├── assets/
 │   └── css/
-│       └── theme.css       # Système de design complet (variables CSS, composants)
+│       └── theme.css            # Système de design complet
+│                                  ├── variables CSS (couleurs, typo, espacement)
+│                                  ├── composants (project-row, skill-chip, timeline…)
+│                                  └── responsive + prefers-reduced-motion
+│
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml      # Workflow GitHub Actions → GitHub Pages
-├── .nojekyll               # Désactive le traitement Jekyll par GitHub Pages
-├── README.md               # Ce fichier
-└── style.css               # Ancien CSS (non chargé, conservé comme sauvegarde)
+│       └── deploy.yml           # Workflow GitHub Actions → GitHub Pages
+│
+├── .nojekyll                    # Désactive le traitement Jekyll de GitHub
+├── README.md                    # Ce fichier
+└── style.css                    # Ancien CSS — conservé, non chargé
 ```
 
 ---
 
-## Fixes courants
+## Lancer en local
 
-### ❌ Erreur 404 sur la page d'accueil
+Aucune installation requise.
 
-**Cause :** Le repo est vide ou Pages n'est pas activé.
-**Fix :** Vérifier l'étape 3 (source = GitHub Actions) et que le push a bien été fait.
+```bash
+# Option recommandée — serveur HTTP local (évite les restrictions CORS sur les fonts)
+python -m http.server 3000
+# Ouvrir http://localhost:3000
 
-### ❌ Assets non chargés (CSS manquant, page sans style)
-
-**Cause :** Chemin absolu commençant par `/assets/...` au lieu de `assets/...`.
-**Statut actuel :** ✅ Tous les chemins du projet sont déjà relatifs — pas de correction nécessaire.
-
-### ❌ Le workflow tourne mais la page ne se met pas à jour
-
-**Cause :** Source Pages encore sur "Deploy from a branch".
-**Fix :** Settings → Pages → Source → **GitHub Actions** → Save.
-
-### ❌ Fonts Google ne se chargent pas
-
-**Cause :** Pare-feu ou connexion bloquée.
-**Fix :** Normal en local avec fichier:// — utiliser `python -m http.server` à la place.
-En production (GitHub Pages) : les fonts Google se chargent normalement.
-
-### ❌ `cv.html` s'affiche sans styles sur GitHub Pages
-
-**Cause :** Le chemin `assets/css/theme.css` est interprété relativement à chaque page.
-**Statut actuel :** ✅ Tous les fichiers HTML sont à la racine — le chemin relatif est identique pour tous.
-
-### ❌ Erreur de permission dans le workflow Actions
-
+# Alternative Node.js
+npx serve .
 ```
-Error: HttpError: Resource not accessible by integration
-```
-**Fix :** Settings → Actions → General → Workflow permissions → **Read and write permissions** → Save.
+
+Ouvrir directement `index.html` dans un navigateur fonctionne aussi, sauf pour les Google Fonts
+qui nécessitent un contexte HTTP.
 
 ---
 
-## Personnalisation rapide
+## Déploiement sur GitHub Pages
 
-```css
-/* Changer la couleur d'accent dans assets/css/theme.css */
-:root {
-  --accent: #f2a365;   /* amber — changer ici */
-  --accent2: #7aa7ff;  /* blueprint blue */
-}
+Le déploiement est entièrement automatisé via GitHub Actions. Chaque `push` sur `main` déclenche
+le workflow `.github/workflows/deploy.yml`, qui empaquète les fichiers statiques et les publie
+sur GitHub Pages sans étape de build.
+
+**Configuration initiale (une seule fois) :**
+
+```bash
+# Depuis le dossier du projet
+git init
+git branch -M main
+git add index.html cv.html file.html loisirs.html main.js assets/ .github/ .nojekyll README.md
+git commit -m "feat: initial deploy"
+git remote add origin https://github.com/ILYAS-ENN/portfolio.git
+git push -u origin main
 ```
 
-```html
-<!-- Ajouter un projet dans index.html -->
-<article class="project-row" role="listitem">
-  <span class="project-row__number" aria-hidden="true">04</span>
-  <div class="project-row__body">
-    <h3 class="project-row__title">Nom du projet</h3>
-    <p class="project-row__meta">Catégorie · Année</p>
-    <p class="project-row__summary">Description en 1-2 phrases.</p>
-    <div class="project-row__tags">
-      <span class="tag">Tech</span>
-    </div>
-  </div>
-  <div class="project-row__cta">
-    <a href="..." class="view-case">Voir <i class="fas fa-arrow-right"></i></a>
-  </div>
-</article>
+Ensuite, dans l'interface GitHub :
+
 ```
+Settings → Pages → Build and deployment → Source → GitHub Actions → Save
+```
+
+Le site est disponible sur `https://ilyas-enn.github.io/portfolio/` dès que le job passe au vert.
+
+**Mises à jour suivantes :**
+
+```bash
+git add .
+git commit -m "update: ..."
+git push
+```
+
+**Problèmes courants :**
+
+| Symptôme | Cause probable | Correction |
+|---|---|---|
+| 404 sur toutes les pages | Source Pages incorrecte | Settings → Pages → Source → GitHub Actions |
+| Page sans style | Chemin d'asset absolu | Vérifier que les `href` commencent par `assets/` sans `/` initial |
+| Workflow rouge | Permissions insuffisantes | Settings → Actions → General → Read and write permissions |
+| Fonts absentes | Contexte `file://` | Utiliser `python -m http.server` en local |
 
 ---
 
-*&copy; 2026 Ilyas Ennahli — Polytech Lille, ISIA*
+## Evolution future
+
+Les évolutions envisagées restent dans la contrainte de simplicité du projet.
+
+- Ajout d'une page dédiée aux projets avec descriptions détaillées et liens vers les repos
+- Version PDF du CV générée côté client via `window.print()` et CSS `@media print`
+- Formulaire de contact fonctionnel via un service sans backend (Formspree ou similaire)
+- Internationalisation de l'ensemble du site (actuellement partielle sur `cv.html`)
+- Optimisation des polices : auto-hébergement de Fraunces et Inter pour supprimer la dépendance Google Fonts
+
+---
+
+*Ilyas Ennahli — Polytech Lille, ISIA — 2026*
